@@ -4,18 +4,23 @@
   "info": {
     "singularName": "property-owner",
     "pluralName": "property-owners",
-    "displayName": "PropertyOwner"
+    "displayName": "PropertyOwner",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "FirstName": {
-      "type": "string"
+    "Name": {
+      "displayName": "Name",
+      "type": "component",
+      "repeatable": false,
+      "component": "name.name",
+      "required": true
     },
-    "LastName": {
-      "type": "string"
+    "OwnerID": {
+      "type": "uid"
     }
   }
 }

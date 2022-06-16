@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_name_names",
+  "info": {
+    "displayName": "Name",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": false
+    },
+    "LastName": {
+      "type": "string"
+    }
+  }
+}
