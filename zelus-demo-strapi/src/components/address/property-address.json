@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_address_property_addresses",
+  "info": {
+    "displayName": "PropertyAddress",
+    "icon": "building",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Street": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9\\s,.'-]*",
+      "minLength": 2,
+      "maxLength": 32,
+      "required": true
+    },
+    "Apt": {
+      "type": "string",
+      "regex": "^\\d*$",
+      "maxLength": 10
+    },
+    "City": {
+      "type": "string",
+      "regex": "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$",
+      "required": true,
+      "maxLength": 32,
+      "minLength": 2
+    },
+    "State": {
+      "type": "string",
+      "required": true
+    },
+    "ZIP": {
+      "type": "string",
+      "regex": "^\\d+$",
+      "minLength": 5,
+      "maxLength": 5
+    }
+  }
+}

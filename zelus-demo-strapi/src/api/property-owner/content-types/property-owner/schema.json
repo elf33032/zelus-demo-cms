@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_owners",
+  "info": {
+    "singularName": "property-owner",
+    "pluralName": "property-owners",
+    "displayName": "PropertyOwner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    }
+  }
+}
