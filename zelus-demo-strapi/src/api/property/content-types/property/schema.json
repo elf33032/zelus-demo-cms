@@ -29,6 +29,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::property-owner.property-owner"
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
     }
   }
 }
