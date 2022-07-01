@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "company_name": {
-      "type": "string"
-    },
     "address": {
       "type": "component",
       "repeatable": false,
@@ -31,6 +28,9 @@
       "relation": "oneToMany",
       "target": "api::property.property",
       "mappedBy": "property_company"
+    },
+    "companyName": {
+      "type": "string"
     }
   }
 }

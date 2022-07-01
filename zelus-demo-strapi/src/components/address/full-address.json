@@ -10,22 +10,26 @@
       "type": "string",
       "regex": "^[a-zA-Z0-9\\s,.'-]*",
       "maxLength": 32,
-      "minLength": 2
+      "minLength": 2,
+      "required": true
     },
     "city": {
       "type": "string",
       "regex": "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$",
       "maxLength": 32,
-      "minLength": 2
+      "minLength": 2,
+      "required": true
     },
     "state": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "zip": {
       "type": "string",
       "regex": "^\\d+$",
       "maxLength": 5,
-      "minLength": 5
+      "minLength": 5,
+      "required": true
     },
     "line2": {
       "type": "string",

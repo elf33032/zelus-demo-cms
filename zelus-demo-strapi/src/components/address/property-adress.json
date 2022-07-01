@@ -1,7 +1,8 @@
 {
   "collectionName": "components_address_property_adresses",
   "info": {
-    "displayName": "propertyAdress"
+    "displayName": "propertyAdress",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,22 +10,26 @@
       "type": "string",
       "regex": "^[a-zA-Z0-9\\s,.'-]*",
       "minLength": 2,
-      "maxLength": 32
+      "maxLength": 32,
+      "required": true
     },
     "city": {
       "type": "string",
       "regex": "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$",
       "minLength": 2,
-      "maxLength": 32
+      "maxLength": 32,
+      "required": true
     },
     "state": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "zip": {
       "type": "string",
       "regex": "^\\d+$",
       "minLength": 5,
-      "maxLength": 5
+      "maxLength": 5,
+      "required": true
     }
   }
 }
