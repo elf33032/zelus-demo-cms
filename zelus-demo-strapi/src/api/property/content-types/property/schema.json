@@ -18,25 +18,27 @@
       "minLength": 2,
       "maxLength": 32
     },
-    "Address": {
-      "displayName": "PropertyAddress",
+    "name": {
       "type": "component",
       "repeatable": false,
-      "component": "address.property-address",
-      "required": true
+      "component": "name.name"
     },
-    "property_owner": {
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.property-adress"
+    },
+    "units": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::property-owner.property-owner"
+      "relation": "oneToMany",
+      "target": "api::unit.unit",
+      "mappedBy": "property"
     },
-    "FirstName": {
-      "type": "string",
-      "required": true
-    },
-    "LastName": {
-      "type": "string",
-      "required": true
+    "property_company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-company.property-company",
+      "inversedBy": "properties"
     }
   }
 }

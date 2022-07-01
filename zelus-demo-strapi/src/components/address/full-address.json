@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_address_full_addresses",
+  "info": {
+    "displayName": "fullAddress",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "line1": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9\\s,.'-]*",
+      "maxLength": 32,
+      "minLength": 2
+    },
+    "city": {
+      "type": "string",
+      "regex": "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$",
+      "maxLength": 32,
+      "minLength": 2
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string",
+      "regex": "^\\d+$",
+      "maxLength": 5,
+      "minLength": 5
+    },
+    "line2": {
+      "type": "string",
+      "regex": "^\\d*$",
+      "maxLength": 10
+    }
+  }
+}

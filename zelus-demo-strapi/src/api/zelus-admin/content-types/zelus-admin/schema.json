@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zelus_admins",
+  "info": {
+    "singularName": "zelus-admin",
+    "pluralName": "zelus-admins",
+    "displayName": "Zelus Admin"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "component",
+      "repeatable": false,
+      "component": "name.name"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

@@ -2,15 +2,16 @@
   "collectionName": "components_name_names",
   "info": {
     "displayName": "Name",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "FirstName": {
+    "firstName": {
       "type": "string",
       "required": false
     },
-    "LastName": {
+    "lastName": {
       "type": "string"
     }
   }

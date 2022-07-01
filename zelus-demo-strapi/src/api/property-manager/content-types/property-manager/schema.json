@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_managers",
+  "info": {
+    "singularName": "property-manager",
+    "pluralName": "property-managers",
+    "displayName": "Property Manager"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "component",
+      "repeatable": false,
+      "component": "name.name"
+    },
+    "email": {
+      "type": "email"
+    },
+    "property_company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-company.property-company",
+      "inversedBy": "property_managers"
+    }
+  }
+}

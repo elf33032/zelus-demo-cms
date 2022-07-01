@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_address_property_adresses",
+  "info": {
+    "displayName": "propertyAdress"
+  },
+  "options": {},
+  "attributes": {
+    "line1": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9\\s,.'-]*",
+      "minLength": 2,
+      "maxLength": 32
+    },
+    "city": {
+      "type": "string",
+      "regex": "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$",
+      "minLength": 2,
+      "maxLength": 32
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string",
+      "regex": "^\\d+$",
+      "minLength": 5,
+      "maxLength": 5
+    }
+  }
+}
